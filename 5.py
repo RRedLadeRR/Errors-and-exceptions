@@ -11,11 +11,11 @@ def non_negatives(nums):
 
     return nums
 
-# import random
-#
-# n = 10
-# nums = [round(random.uniform(-10, 10), 2) for i in range(n)]
-# print(nums)
-#
-# non_negatives(nums)
-# print(nums)
+import random
+
+n = 10
+nums = [round(random.uniform(-10, 10), 2) for i in range(n)]
+print(nums)
+
+non_negatives(nums)
+print(nums)

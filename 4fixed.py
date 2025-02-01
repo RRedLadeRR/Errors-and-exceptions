@@ -10,3 +10,16 @@ def min_pair(nums):
         min_sum = min(current_sum, min_sum)  # Використовуємо функцію min()
 
     return min_sum
+
+import random
+
+random.seed(50)
+
+N_MAX = 10
+RANGE_MIN = 1
+RANGE_MAX = 100
+nums = random.sample(range(RANGE_MIN, RANGE_MAX), N_MAX)
+
+print(nums)
+
+print(min_pair(nums))
