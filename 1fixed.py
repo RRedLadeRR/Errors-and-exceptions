@@ -12,3 +12,5 @@ def sum_of_digits(n):
             c = c + digit
         n //= 10
     return c
+
+print(sum_of_digits(123))

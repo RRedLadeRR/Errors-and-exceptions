@@ -14,3 +14,5 @@ def primes(a, b):
             if c == 2:
                 res.append(i)
     return res
+
+print(primes(1, 10))

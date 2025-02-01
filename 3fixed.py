@@ -2,6 +2,12 @@
 Помилки (номери рядків через пробіл, цей рядок - №2): 18 22
 """
 
+seats = [
+    [1, 0, 1, 0, 1],
+    [1, 1, 0, 1, 1],
+    [0, 0, 0, 1, 1]
+]
+
 def first_vacant_row(seats):
     """Повернути перший ряд, в якому є найбільше
     вільних місць та їх кількість.
@@ -26,4 +32,6 @@ def first_vacant_row(seats):
     if max_count == 0:
         return 0, 0  # Якщо вільних місць немає
 
-    return max_row + 1, max_count  # Додаємо 1 до номера рядка
+    return max_row + 1, max_count
+
+print(first_vacant_row(seats))
